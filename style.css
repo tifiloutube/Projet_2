@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'abhaya_libreregular';
+    src: url('../fonts/AbhayaLibre-Regular-webfont.eot');
+    src: url('../fonts/AbhayaLibre-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AbhayaLibre-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/AbhayaLibre-Regular-webfont.woff') format('woff'),
+         url('../fonts/AbhayaLibre-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/AbhayaLibre-Regular-webfont.svg#abhaya_libreregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'archisticonormal';
+    src: url('../fonts/Archistico_Simple-webfont.eot');
+    src: url('../fonts/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Archistico_Simple-webfont.woff2') format('woff2'),
+         url('../fonts/Archistico_Simple-webfont.woff') format('woff'),
+         url('../fonts/Archistico_Simple-webfont.ttf') format('truetype'),
+         url('../fonts/Archistico_Simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+     font-family: 'bellotaregular';
+    src: url('Bellota-Regular-webfont.eot');
+    src: url('Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Bellota-Regular-webfont.woff2') format('woff2'),
+         url('Bellota-Regular-webfont.woff') format('woff'),
+         url('Bellota-Regular-webfont.ttf') format('truetype'),
+         url('Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	max-width: 1190px;
+	margin: auto;
+}
+
+/*-----PRÉSENTATION GLOBAL----
+------------------------------*/
+
+h2, h3, h4{
+	font-family: 'bellotaregular', sans-serif;
+}
+
+h1{
+	font-family: 'archisticonormal', sans-serif;
+} 
+
+/*-----HEADER-----
+------------------*/
+
+
+p{
+	font-family: 'abhaya_libreregular', sans-serif;
+}
+
+header{
+	display: flex;
+}
+
+.photo{
+	margin-right: 10%;
+	background-color: #FFC107;
+	width: 300px;
+	height: 300px;
+}
+.photo img{
+	display: flex;
+	margin: auto;
+	margin-top: 17%;
+}
+
+#title{
+	margin-top: 7%;
+}
+
+h1 span{
+	color: #FFC107;
+}
+
+#title hr{
+	border: 1px solid #FFC107;
+	width: 60px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#title h2{
+	margin-bottom: 0px;
+}
+
+
+/*-----MAIN--------
+-------------------*/
+
+
+main{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+aside{
+	display: flex; 
+	flex-direction: column;
+	background-color: #FFC107;
+	width: 393.5px;
+	min-width: 300px;
+}
+
+aside h4{
+	font-size: 1.3em;
+	background-color: #424242;
+	color: #FFC107;
+	text-align: center;
+	height: 30px;
+	padding-top: 10px;
+	margin: auto;
+}
+
+aside p{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1em;
+}
+
+#about_me{
+	flex:2;
+}
+
+section{
+	margin-left: 50px;
+}
+
+section p{
+	font-size: 1em;
+}
+
+.training_title {
+	display: flex;
+}
+
+.training_title h3{
+	font-size: 1.4em;
+	margin: auto;
+	margin-left: 30px;
+}
+
+.training_title .fas{
+	color: #FFC107;
+	font-size: 1.8em;
+}
+
+.fas{
+	color: #FFC107;
+	font-size: 0.8em;
+}
+
+.far{
+	color: #FFC107;
+	font-size: 1em;
+}
+
+hr{
+	border: 1px solid #FFC107;
+}
+
+.training{
+	display: flex;
+}
+
+.experience{
+	margin-left: 130px;
+}
+
+.dates{
+	display: flex;
+	width: 250px;
+}
+
+.dates p{
+	padding-left: 10px;
+}
+
+.dates .far, .fas{
+	padding-top: 18px;
+}
+
+.professional_experience{
+	display: flex;
+}
+
+.professional_experience .dates{
+	width: 500px;
+}
+
+.professional_experience .experience{
+	margin-left: 0px;
+}
+
+#mentor_name{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 200px; 
+}
+
+footer{
+	text-align: center;
+}
+
+#hobbies{
+	height: 130px;
+}
+
+#hobbies .fas{
+	color: #424242;
+	font-size: 2.5em;
+	text-align: center;
+	border: 3px solid #424242;
+	border-radius: 80px;
+	height: 50px;
+	width: 60px;
+	margin-top: 10px;
+	padding-top: 6px;
+}
+
+.hobbies_items{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*-----RESPONSIVE TABLETTE-----
+-------------------------------*/
+
+
+@media screen and (max-width: 1024px) {
+
+
+header{
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: center;
+}
+
+header hr{
+	display: none;
+}
+
+.photo{
+	background-color: white;
+	text-align: center;
+	margin:auto;
+}
+
+main{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+aside{
+	width: auto;
+}
+
+aside p{
+	font-size: 1em;
+}
+
+#about_me p{
+	text-align: justify;
+}
+
+section{
+	width: auto;
+}
+
+aside p{
+	text-align: center;
+}
+
+#mentor_name{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+}
+
+}
+
+/*-----RESPONSIVE SMARTPHONE-----
+---------------------------------*/
+
+
+@media screen and (max-device-width: 475px) {
+
+
+.training_title h3{
+	margin: auto;
+	margin-left: 10px;
+}
+
+.training_title i{
+	margin: auto;
+	margin-right: 10px
+}
+
+aside{
+	max-width: 900px;
+	min-width: auto;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 1px 10px 10px 1px black;
+}
+
+aside p{
+	font-size: 0.8em;
+}
+
+#contact p{
+	margin-bottom: 25px;
+}
+
+#contanct, H4 {
+	border-radius: 7px;
+}
+section{
+	margin: auto;
+	max-width: 800px;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 1px 10px 10px 1px black;
+	margin-top: 50px;
+	width: auto;
+	text-align: center;
+}
+
+.training, .professional_experience{
+	display: flex;
+	flex-direction: column;
+}
+
+.experience{
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+
+.dates{
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+
+.professional_experience .dates{
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+
+#mentor_name{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#training, #professional_experience, #recommandations{
+	margin-bottom: 30px;
+}
+
+#about_me p{
+    text-align: justify;
+}
+
+}
