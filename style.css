@@ -99,7 +99,7 @@ main{
 	flex-direction: row-reverse;
 }
 
-aside{
+#left_block{
 	display: flex; 
 	flex-direction: column;
 	background-color: #FFC107;
@@ -107,7 +107,7 @@ aside{
 	min-width: 300px;
 }
 
-aside h4{
+#left_block h4{
 	font-size: 1.3em;
 	background-color: #424242;
 	color: #FFC107;
@@ -117,7 +117,7 @@ aside h4{
 	margin: auto;
 }
 
-aside p{
+#left_block p{
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
@@ -130,11 +130,11 @@ aside p{
 	flex:2;
 }
 
-section{
+#right_block{
 	margin-left: 50px;
 }
 
-section p{
+#right_block p{
 	font-size: 1em;
 }
 
@@ -214,6 +214,11 @@ footer{
 	height: 130px;
 }
 
+.hobbies_items{
+	display: flex;
+	justify-content: space-around;
+}
+
 #hobbies .fas{
 	color: #424242;
 	font-size: 2.5em;
@@ -225,12 +230,6 @@ footer{
 	margin-top: 10px;
 	padding-top: 6px;
 }
-
-.hobbies_items{
-	display: flex;
-	justify-content: space-around;
-}
-
 
 /*-----RESPONSIVE TABLETTE-----
 -------------------------------*/
@@ -260,11 +259,11 @@ main{
 	flex-direction: column-reverse;
 }
 
-aside{
+#left_block{
 	width: auto;
 }
 
-aside p{
+#left_block p{
 	font-size: 1em;
 }
 
@@ -272,11 +271,11 @@ aside p{
 	text-align: justify;
 }
 
-section{
+#right_block{
 	width: auto;
 }
 
-aside p{
+#left_block p{
 	text-align: center;
 }
 
@@ -295,6 +294,10 @@ aside p{
 
 @media screen and (max-device-width: 475px) {
 
+main{
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 .training_title h3{
 	margin: auto;
@@ -306,16 +309,16 @@ aside p{
 	margin-right: 10px
 }
 
-aside{
+#left_block{
 	max-width: 900px;
 	min-width: auto;
 	margin: auto;
 	border: 2px solid black;
 	border-radius: 10px;
-	box-shadow: 1px 10px 10px 1px black;
+	box-shadow: 1px 10px 30px 1px black;
 }
 
-aside p{
+#left_block p{
 	font-size: 0.8em;
 }
 
@@ -323,15 +326,16 @@ aside p{
 	margin-bottom: 25px;
 }
 
-#contanct, H4 {
+#contact, H4 {
 	border-radius: 7px;
 }
-section{
+
+#right_block {
 	margin: auto;
 	max-width: 800px;
 	border: 2px solid black;
 	border-radius: 10px;
-	box-shadow: 1px 10px 10px 1px black;
+	box-shadow: 1px 10px 30px 1px black;
 	margin-top: 50px;
 	width: auto;
 	text-align: center;
@@ -366,7 +370,7 @@ section{
 	text-align: center;
 }
 
-#training, #professional_experience, #recommandations{
+section{
 	margin-bottom: 30px;
 }
 
