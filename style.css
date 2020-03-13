@@ -46,13 +46,12 @@ h1{
 	font-family: 'archisticonormal', sans-serif;
 } 
 
-/*-----HEADER-----
-------------------*/
-
-
 p{
 	font-family: 'abhaya_libreregular', sans-serif;
 }
+
+/*-----HEADER-----
+------------------*/
 
 header{
 	display: flex;
@@ -90,6 +89,10 @@ h1 span{
 }
 
 
+/*-----END HEADER-----
+----------------------*/
+
+
 /*-----MAIN--------
 -------------------*/
 
@@ -98,6 +101,10 @@ main{
 	display: flex;
 	flex-direction: row-reverse;
 }
+
+/*-----LEFT BLOCK-----
+----------------------*/
+
 
 #left_block{
 	display: flex; 
@@ -120,14 +127,29 @@ main{
 #left_block p{
 	display: flex;
 	flex-direction: column;
-	text-align: justify;
-	padding-left: 30px;
-	padding-right: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
 	font-size: 1em;
 }
 
 #about_me{
 	flex:2;
+}
+
+#about_me p{
+	width: 240px;
+	text-align: justify;
+}
+
+
+/*-----END LEFT BLOCK-----
+--------------------------*/
+
+/*-----RIGHT BLOCK-----
+----------------------*/
+
+section{
+	margin-bottom: 50px;
 }
 
 #right_block{
@@ -171,13 +193,9 @@ hr{
 	display: flex;
 }
 
-.experience{
-	margin-left: 130px;
-}
-
 .dates{
 	display: flex;
-	width: 250px;
+	min-width: 300px;
 }
 
 .dates p{
@@ -188,12 +206,12 @@ hr{
 	padding-top: 18px;
 }
 
-.professional_experience{
-	display: flex;
+.experience{
+	width: auto;
 }
 
-.professional_experience .dates{
-	width: 500px;
+.professional_experience{
+	display: flex;
 }
 
 .professional_experience .experience{
@@ -204,10 +222,6 @@ hr{
 	display: flex;
 	justify-content: space-between;
 	margin-right: 200px; 
-}
-
-footer{
-	text-align: center;
 }
 
 #hobbies{
@@ -230,6 +244,30 @@ footer{
 	margin-top: 10px;
 	padding-top: 6px;
 }
+
+#recommandations{
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+/*-----END LEFT BLOCK-----
+--------------------------*/
+
+/*-----END MAIN-----
+--------------------*/
+
+/*----FOOTER-----
+-----------------*/
+
+footer{
+	text-align: center;
+}
+
+/*-----END FOOTER-----
+----------------------*/
+
+
+
 
 /*-----RESPONSIVE TABLETTE-----
 -------------------------------*/
@@ -268,6 +306,7 @@ main{
 }
 
 #about_me p{
+	width: auto;
 	text-align: justify;
 }
 
@@ -287,7 +326,6 @@ main{
 }
 
 }
-
 /*-----RESPONSIVE SMARTPHONE-----
 ---------------------------------*/
 
