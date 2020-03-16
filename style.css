@@ -250,7 +250,7 @@ hr{
 	margin-bottom: 25px;
 }
 
-/*-----END LEFT BLOCK-----
+/*-----END RIGHT BLOCK-----
 --------------------------*/
 
 /*-----END MAIN-----
@@ -326,11 +326,12 @@ main{
 }
 
 }
+
 /*-----RESPONSIVE SMARTPHONE-----
 ---------------------------------*/
 
 
-@media screen and (max-device-width: 475px) {
+@media screen and (max-width: 475px) {
 
 main{
 	margin-left: 10px;
