@@ -392,8 +392,11 @@ main{
 }
 
 .dates{
-	width: auto;
-	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.dates p{
 	text-align: center;
 }
 
